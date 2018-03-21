@@ -1,0 +1,25 @@
+{
+  "name": "qrcode",
+  "version": "1.0.0",
+  "description": "a simple qrcode generate service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "oonnnoo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "qr-image": "^3.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oonnnoo/qrcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oonnnoo/qrcode/issues"
+  },
+  "homepage": "https://github.com/oonnnoo/qrcode#readme"
+}

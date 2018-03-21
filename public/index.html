@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>二维码生成</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .form-control {
+      display: block;
+      width: 100%;
+      height: 34px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #qrSource {
+      height: 100px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>二维码生成</h1>
+    <form action="./qrcode" method="get">
+      <div>
+        <textarea class="form-control" id="qrSource" name="text" id="" cols="30" rows="10" placeholder="在这里填写需要生成二维码的任意内容"></textarea>
+      </div>
+      <div>
+        容错率：
+        <input id="level_M" type="radio" name="level" value="M" checked><label for="level_M">M</label>
+        <input id="level_L" type="radio" name="level" value="L"> <label for="level_L">L</label>
+        <input id="level_Q" type="radio" name="level" value="Q"> <label for="level_Q">Q</label>
+        <input id="level_H" type="radio" name="level" value="H"> <label for="level_H">H</label>
+      </div>
+      <div>
+        尺寸：
+        <input type="text" name="size" value="230">
+      </div>
+      <button type="submit">提交</button>
+    </form>
+
+  </div>
+</body>
+
+</html>
