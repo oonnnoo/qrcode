@@ -11,8 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/qrcode', function (req, res, next) {
   let text = req.query.text || 'https://api.oonnnoo.com/qr/';
   let ec_level = req.query.level || 'M';
-  let size = parseInt(req.query.size / 23) || 1;
-  console.log(size)
+  let size = parseInt(req.query.size / 23) || 10;
   code = qr.image(text, {
     type: 'png',
     ec_level: ec_level,
